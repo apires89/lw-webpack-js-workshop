@@ -4,8 +4,10 @@ import {loadDynamicBannerText} from '../components/banner';
 import {initUpdateNavbarOnScroll} from '../components/navbar';
 import {autoCompleteJs} from '../components/autocomplete';
 import {toggleIconsdeveloper} from '../components/bookmarking';
+import {cooldatepicker} from '../components/booking';
 
 initUpdateNavbarOnScroll();
+cooldatepicker();
 
 const homePage = document.querySelector('.pages.home');
 if (homePage) {
