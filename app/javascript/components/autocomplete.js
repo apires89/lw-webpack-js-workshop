@@ -1,9 +1,9 @@
 import autoComplete from 'js-autocomplete';
 
-const searchElement = document.getElementById('search-data');
-const skills = JSON.parse(searchElement.dataset.skills);
 
 const autoCompleteJs = function () {
+  const searchElement = document.getElementById('search-data');
+  const skills = JSON.parse(searchElement.dataset.skills);
     new autoComplete({
     selector: document.getElementById("q"),
     minChars: 1,

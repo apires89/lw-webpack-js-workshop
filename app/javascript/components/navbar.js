@@ -1,14 +1,15 @@
-function initNavbarOnScrool() {
+function initUpdateNavbarOnScroll() {
   const navbar = document.querySelector('.navbar-wagon');
   if (navbar) {
-    window.addEventListener('scroll',() => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY >= window.innerHeight) {
-        navbar.classList.add('navbar-wagon-white');
+        navbar.classList.remove('navbar-wagon-transparent');
+        navbar.classList.add('navbar-wagon-filled');
       } else {
-        navbar.classLis.remove('navbar-wagon-white');
+        navbar.classList.remove('navbar-wagon-filled');
       }
     });
   }
 }
 
-export { initNavbarOnScrool };
+export { initUpdateNavbarOnScroll };
